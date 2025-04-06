@@ -1,0 +1,12 @@
+Background Colors:
+bg-gray-800: A dark gray background for the container.
+bg-gray-900: An even darker gray background for the inner section.
+
+Text Colors:
+text-gray-100: A light gray color for the main text.
+text-gray-300: A medium gray color for the inner text.
+text-indigo-400: A soft indigo color for the heading text.
+
+Border Color:
+
+border-gray-700: A dark gray color for the border.

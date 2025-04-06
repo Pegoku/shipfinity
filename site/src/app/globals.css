@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html, body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+  @apply text-indigo-400 underline
+}
+
+.box-title {
+  @apply text-lg font-bold uppercase text-indigo-400;
+}
+
+.box-out{
+  @apply bg-gray-900 text-gray-100 p-6 rounded-lg shadow-md border border-gray-700 mt-8
+}
+.box-in{
+  @apply bg-gray-800 text-gray-300 p-6 rounded-lg shadow-md mt-4
+}
