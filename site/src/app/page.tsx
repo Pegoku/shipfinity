@@ -31,9 +31,7 @@ export default function Home() {
       </div>
       <br />
       <div className="box-out">
-        <h2 className="box-title">
-          What are the requirements?
-        </h2>
+        <h2 className="box-title">What are the requirements?</h2>
         <p className="box-in">
           1. Spend at least (TBD) hours designing the bins <br />
           2. Your submission must be unique. You may be asked to clarify why
@@ -43,11 +41,25 @@ export default function Home() {
           4. You must be 18 or under.
         </p>
       </div>
+
       <br />
       <div className="box-out">
-        <h2 className="box-title">
-          What have people already made?
-        </h2>
+        <h2 className="box-title">What will I get?</h2>
+        <p className="box-in">
+          1. You’ll receive a grant locked to filament vendors at $4/hour of
+          your design time.
+          <br />
+          2. When the event ends, a week-long voting will determine the best
+          bins.
+          <br />
+          3. The top 5 vote-getting participants will each receive an extra
+          grant equal to (Total hours spent by all participants / 5).
+          <br />
+        </p>
+      </div>
+      <br />
+      <div className="box-out">
+        <h2 className="box-title">What have people already made?</h2>
         <div className="box-in">
           <p className="text-gray-300">
             There are lots of community-made bins and collections which can be
@@ -84,14 +96,16 @@ export default function Home() {
       </div>
       <br />
       <div className="box-out">
-        <p className="box-title">
-          How do I start?
-        </p>
+        <p className="box-title">How do I start?</p>
         <p className="box-in">
           Already familiar with CAD and Gridfinity? Simply open your preferred
           editor and start creating a new project! <br /> New to CAD?{" "}
           <a href="guide">Click here for a beginner's guide</a>
-          to get started. Don't forget to join the <a href="https://hackclub.slack.com/archives/C08EEU7T4GM">#shipfinity</a> channel on Slack!
+          {" "}to get started. Don't forget to join the{" "}
+          <a href="https://hackclub.slack.com/archives/C08EEU7T4GM">
+            #shipfinity
+          </a>{" "}
+          channel on Slack!
         </p>
       </div>
     </div>
