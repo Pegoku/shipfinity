@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className="p-10 bg-gray-800 text-gray-100">
       <div className="flex flex-col items-center">
-        <h1 className="text-4xl font-bold text-indigo-400">ShipFinity</h1>
+        <h1 className="text-4xl font-bold text-indigo-400">Shipfinity</h1>
         <p className="mt-4 text-gray-300">
           A Hack Club YSWS where you ship a Gridfinity bin, and we'll send you
           it (or filament)!
