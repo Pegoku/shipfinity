@@ -12,7 +12,7 @@ export default function OnShapeGuide() {
           Install the{" "}
           <a href="https://github.com/JeffreyWangDev/onshape-wakatime">
             Wakatime OnShape
-          </a>
+          </a>{" "}
           browser extension. While you're at it, star the repo.
         </p>
       </div>
@@ -25,7 +25,10 @@ export default function OnShapeGuide() {
           height={768}
           className="border border-gray-700 rounded-lg object-contain"
         />
-        <p className="box-in">Create a new sketch and 3x 42mm squares</p>
+        <p className="box-in">
+          Create a new sketch (select "Top Plane") and 3x 42mm squares using the
+          "Rectangle" tool (found in the sketch toolbar)
+        </p>
       </div>
 
       <div className="box-out">
@@ -39,6 +42,8 @@ export default function OnShapeGuide() {
         />
         <p className="box-in">
           Add constraints to the squares to make them 42mm x 42mm and 5mm apart.
+          You can do this by selecting the "Horizontal constraint" tool and then
+          clicking on the edges of the squares.
         </p>
       </div>
 
@@ -51,11 +56,14 @@ export default function OnShapeGuide() {
           height={768}
           className="border border-gray-700 rounded-lg object-contain"
         />
-        <p className="box-in">Extrude the base to 3.5mm.</p>
+        <p className="box-in">
+          When you finish your sketch (by clicking the green checkmark), click
+          the "Extrude" button and extrude the base to 3.5mm.
+        </p>
       </div>
 
       <div className="box-out">
-        <p className="box-title">4. Main bin</p>
+        <p className="box-title">4. Main Body Walls</p>
         <Image
           src="/onshape/img_3.png"
           alt="FreeCAD"
@@ -63,7 +71,11 @@ export default function OnShapeGuide() {
           height={768}
           className="border border-gray-700 rounded-lg object-contain"
         />
-        <p className="box-in">Create the main body of the bin</p>
+        <p className="box-in">
+          Start a new sketch on top of the flat surface (the just extruded one).
+          Draw the outer rectangle with a length of 138mm and width of 44mm
+          (modify to fit your needs). Then, extrude it 29.6mm.
+        </p>
       </div>
 
       <div className="box-out">
@@ -85,39 +97,38 @@ export default function OnShapeGuide() {
           />
         </div>
         <p className="box-in">
-          Add a fillet to the corners of the bin. It should be 2mm
+          Using the "Fillet" button, add a fillet to the corners of the bin. The
+          "Radius" should be 2mm
         </p>
       </div>
 
       <div className="box-out">
-        <p className="box-title">6. Add bin lip</p>
-        <Image
-          src="/onshape/img_7.png"
-          alt="FreeCAD"
-          width={1024}
-          height={768}
-          className="border border-gray-700 rounded-lg object-contain"
-        />
+        <p className="box-title">6. Hollow bin</p>
+        <div className="flex flex-wrap gap-4 my-4">
+          <Image
+            src="/onshape/img_7.png"
+            alt="FreeCAD"
+            width={508}
+            height={768}
+            className="border border-gray-700 rounded-lg object-contain"
+          />
+          <Image
+            src="/onshape/img_8.png"
+            alt="FreeCAD"
+            width={508}
+            height={768}
+            className="border border-gray-700 rounded-lg object-contain"
+          />
+        </div>
         <p className="box-in">
-          Create a sketch on the top face of the bin and draw a 40mm square with
-          2mm margin.
+          Create a sketch on the top face of the bin and draw a square with 2mm
+          margin on each side, then remove 25mm of the bin. This will create a
+          hollow bin.
         </p>
       </div>
+
       <div className="box-out">
-        <p className="box-title">7. Hollow the bin</p>
-        <Image
-          src="/onshape/img_8.png"
-          alt="FreeCAD"
-          width={1024}
-          height={768}
-          className="border border-gray-700 rounded-lg object-contain"
-        />
-        <p className="box-in">
-          Remove 25mm of the bin. This will create a hollow bin.
-        </p>
-      </div>
-      <div className="box-out">
-        <p className="box-title">8. Extrude the base</p>
+        <p className="box-title">7. Create the Bottom Mounting Features</p>
         <Image
           src="/onshape/img_9.png"
           alt="FreeCAD"
@@ -125,11 +136,14 @@ export default function OnShapeGuide() {
           height={768}
           className="border border-gray-700 rounded-lg object-contain"
         />
-        <p className="box-in">Extrude 2mm of the base.</p>
+        <p className="box-in">
+          Click directly on the flat bottom surface of your bin's main body and
+          extrude it 2mm.
+        </p>
       </div>
 
       <div className="box-out">
-        <p className="box-title">9. Chamfer the base</p>
+        <p className="box-title">8. Chamfer the base</p>
         <div className="flex flex-wrap gap-4 my-4">
           <Image
             src="/onshape/img_10.png"
@@ -152,7 +166,7 @@ export default function OnShapeGuide() {
       </div>
 
       <div className="box-out">
-        <p className="box-title">10. Add the label tab</p>
+        <p className="box-title">9. Add the label tab</p>
         <div className="flex flex-wrap gap-4 my-4">
           <Image
             src="/onshape/img_15.png"
@@ -175,7 +189,7 @@ export default function OnShapeGuide() {
       </div>
 
       <div className="box-out">
-        <p className="box-title">11. Split the bin</p>
+        <p className="box-title">10. Split the bin</p>
         <Image
           src="/onshape/img_18.png"
           alt="FreeCAD"
